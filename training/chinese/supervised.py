@@ -10,18 +10,18 @@ from tqdm import tqdm
 
 # Load data
 dir_name = '../../dataset/face2/'
-human_df = pd.read_csv(dir_name + 'generated/generated_webnovel_data_200.csv')
-generated_df = pd.read_csv(dir_name + 'human/human_webnovel_data_200.csv')
+human_df = pd.read_csv(dir_name + 'generated/generated_data.csv')
+generated_df = pd.read_csv(dir_name + 'human/human_data.csv')
 
 test_size = 0.2
 bert_base_dir = 'bert-base-chinese'
 num_epochs = 3
 learning_rate = 2e-5
 max_length = 512
-batch_size = 8
+batch_size = 64
 
-MODEL_SAVE_PATH = '../../results/chinese_bert_model_1.pt'
-save_logits_path = '../../results/chinese_bert_logits_1.pt'
+MODEL_SAVE_PATH = '../../results/chinese_bert_model_2.pt'
+save_logits_path = '../../results/chinese_bert_logits_2.pt'
 
 # Combine and shuffle
 webnovel_df = pd.concat([human_df, generated_df], axis=0)
