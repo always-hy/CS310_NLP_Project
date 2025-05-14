@@ -67,6 +67,7 @@ def run_gpt2_model(model, tokenizer, args):
         data = [line.strip() for line in fr.readlines()]
     with open(args.output, 'w') as fw:
         for line in tqdm(data):
+            # get input_ids
             encoded_input = tokenizer(line,
                                       max_length=1024,
                                       truncation=True,
