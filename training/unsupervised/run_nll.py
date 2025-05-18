@@ -7,9 +7,35 @@ from tqdm import tqdm
 import torch.nn as nn
 import numpy as np
 from einops import rearrange
-from config import load_config
+# from config import load_config
 from model import Model
+import subprocess
+import tempfile
 
+def compute_nll_from_json(json_file, key, model_path, output_nll_file, model='custom'):
+    # Load JSON (list of dicts)
+    with open(json_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    # Extract text under the specified key (e.g., "human" or "gpt")
+    texts = [item[key] for item in data if key in item]
+
+    # Write texts to a temporary txt file
+    with tempfile.NamedTemporaryFile(mode='w+', delete=False, encoding='utf-8') as temp_input:
+        for line in texts:
+            temp_input.write(line.strip().replace('\n', ' ') + '\n')
+        temp_input_path = temp_input.name
+
+    # Run NLL calculation using subprocess
+    command = [
+        'python', 'run_nll.py',
+        '-i', temp_input_path,
+        '-o', output_nll_file,
+        '--model_path', model_path,
+        '--model', model
+    ]
+    print("Running:", " ".join(command))
+    subprocess.run(command)
 
 def create_parser():
     parser = argparse.ArgumentParser()
@@ -63,7 +89,8 @@ def run_gpt2_model(model, tokenizer, args):
     criterian = nn.NLLLoss(reduction='none')
     log_softmax = nn.LogSoftmax(dim=1)
 
-    with open(args.input, 'r') as fr:
+    # with open(args.input, 'r') as fr:
+    with open(args.input, 'r', encoding='utf-8') as fr:
         data = [line.strip() for line in fr.readlines()]
     with open(args.output, 'w') as fw:
         for line in tqdm(data):
@@ -113,7 +140,8 @@ def run_custom_model(args):
     """
     # Load model and data
     model = Model(args.model_path)
-    with open(args.input, 'r') as f:
+    # with open(args.input, 'r') as f:
+    with open(args.input, 'r', encoding='utf-8') as fr:
         data = [line.strip() for line in f.readlines()]
     # Compute
     results = []
