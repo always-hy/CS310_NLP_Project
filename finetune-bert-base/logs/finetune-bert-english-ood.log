@@ -1,0 +1,12 @@
+Dataset columns: Index(['text', 'label'], dtype='object')
+Number of rows: 1849
+Maximum length of text: 30561
+Minimum length of text: 29
+Average length of text: 980.2963764196863
+Out-of-Domain Poetry Test Metrics:
+  Accuracy: 0.8004
+  Precision: 0.6714
+  Recall: 1.0000
+  F1-Score: 0.8034
+  AUROC: 0.9858
+✅ Logits saved to ../results/bert_english_logits_ood.pt

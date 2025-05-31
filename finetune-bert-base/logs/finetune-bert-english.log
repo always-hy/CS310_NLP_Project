@@ -1,0 +1,85 @@
+Number of rows: 21994
+Maximum length of text: 47557
+Minimum length of text: 3
+Average length of text: 3200.7701191233973
+Epoch 1, Average Loss: 0.0642
+Epoch 1, Test Metrics:
+  Accuracy: 0.9814
+  Precision: 0.9795
+  Recall: 0.9992
+  F1-Score: 0.9893
+  AUROC: 0.9995
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 2, Average Loss: 0.0157
+Epoch 2, Test Metrics:
+  Accuracy: 0.9827
+  Precision: 0.9818
+  Recall: 0.9984
+  F1-Score: 0.9900
+  AUROC: 0.9993
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 3, Average Loss: 0.0114
+Epoch 3, Test Metrics:
+  Accuracy: 0.9811
+  Precision: 0.9788
+  Recall: 0.9997
+  F1-Score: 0.9892
+  AUROC: 0.9995
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 4, Average Loss: 0.0034
+Epoch 4, Test Metrics:
+  Accuracy: 0.9939
+  Precision: 0.9947
+  Recall: 0.9982
+  F1-Score: 0.9964
+  AUROC: 0.9995
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 5, Average Loss: 0.0102
+Epoch 5, Test Metrics:
+  Accuracy: 0.9707
+  Precision: 0.9967
+  Recall: 0.9691
+  F1-Score: 0.9827
+  AUROC: 0.9966
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 6, Average Loss: 0.0051
+Epoch 6, Test Metrics:
+  Accuracy: 0.9648
+  Precision: 0.9609
+  Recall: 0.9997
+  F1-Score: 0.9799
+  AUROC: 0.9991
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 7, Average Loss: 0.0010
+Epoch 7, Test Metrics:
+  Accuracy: 0.9923
+  Precision: 0.9919
+  Recall: 0.9992
+  F1-Score: 0.9955
+  AUROC: 0.9997
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 8, Average Loss: 0.0061
+Epoch 8, Test Metrics:
+  Accuracy: 0.9941
+  Precision: 0.9945
+  Recall: 0.9987
+  F1-Score: 0.9966
+  AUROC: 0.9985
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 9, Average Loss: 0.0029
+Epoch 9, Test Metrics:
+  Accuracy: 0.9900
+  Precision: 0.9898
+  Recall: 0.9987
+  F1-Score: 0.9942
+  AUROC: 0.9992
+✅ Logits saved to ../results/bert_logits_english.pt
+Epoch 10, Average Loss: 0.0000
+Epoch 10, Test Metrics:
+  Accuracy: 0.9902
+  Precision: 0.9895
+  Recall: 0.9992
+  F1-Score: 0.9943
+  AUROC: 0.9987
+✅ Logits saved to ../results/bert_logits_english.pt
+✅ Model saved to ../results/bert_model_english.pt

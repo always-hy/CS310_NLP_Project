@@ -1,0 +1,85 @@
+Number of rows: 28112
+Maximum length of text: 6192
+Minimum length of text: 1
+Average length of text: 786.3835728514514
+Epoch 1, Average Loss: 0.4367
+Epoch 1, Test Metrics:
+  Accuracy: 0.8536
+  Precision: 0.8446
+  Recall: 0.8899
+  F1-Score: 0.8667
+  AUROC: 0.9408
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 2, Average Loss: 0.2690
+Epoch 2, Test Metrics:
+  Accuracy: 0.7418
+  Precision: 0.6935
+  Recall: 0.9265
+  F1-Score: 0.7932
+  AUROC: 0.9082
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 3, Average Loss: 0.1761
+Epoch 3, Test Metrics:
+  Accuracy: 0.7418
+  Precision: 0.6951
+  Recall: 0.9208
+  F1-Score: 0.7922
+  AUROC: 0.8848
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 4, Average Loss: 0.1221
+Epoch 4, Test Metrics:
+  Accuracy: 0.7560
+  Precision: 0.7064
+  Recall: 0.9301
+  F1-Score: 0.8030
+  AUROC: 0.9109
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 5, Average Loss: 0.1007
+Epoch 5, Test Metrics:
+  Accuracy: 0.7802
+  Precision: 0.7312
+  Recall: 0.9311
+  F1-Score: 0.8191
+  AUROC: 0.9117
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 6, Average Loss: 0.0924
+Epoch 6, Test Metrics:
+  Accuracy: 0.7021
+  Precision: 0.6567
+  Recall: 0.9278
+  F1-Score: 0.7691
+  AUROC: 0.8652
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 7, Average Loss: 0.0798
+Epoch 7, Test Metrics:
+  Accuracy: 0.6335
+  Precision: 0.5960
+  Recall: 0.9757
+  F1-Score: 0.7400
+  AUROC: 0.8381
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 8, Average Loss: 0.0794
+Epoch 8, Test Metrics:
+  Accuracy: 0.6909
+  Precision: 0.6430
+  Recall: 0.9484
+  F1-Score: 0.7664
+  AUROC: 0.8156
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 9, Average Loss: 0.0782
+Epoch 9, Test Metrics:
+  Accuracy: 0.7709
+  Precision: 0.7212
+  Recall: 0.9318
+  F1-Score: 0.8131
+  AUROC: 0.9137
+✅ Logits saved to ../results/bert_logits.pt
+Epoch 10, Average Loss: 0.0772
+Epoch 10, Test Metrics:
+  Accuracy: 0.7512
+  Precision: 0.7046
+  Recall: 0.9205
+  F1-Score: 0.7982
+  AUROC: 0.8320
+✅ Logits saved to ../results/bert_logits.pt
+✅ Model saved to ../results/bert_model.pt

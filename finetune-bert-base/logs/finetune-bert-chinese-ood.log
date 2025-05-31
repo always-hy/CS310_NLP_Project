@@ -1,0 +1,16 @@
+Dataset columns: Index(['text', 'label'], dtype='object')
+Number of rows: 2148
+Maximum length of text: 3341
+Minimum length of text: 12
+Average length of text: 215.80772811918064
+Class distribution: label
+0    0.5
+1    0.5
+Name: proportion, dtype: float64
+Out-of-Domain Finance Test Metrics:
+  Accuracy: 0.6145
+  Precision: 0.5647
+  Recall: 1.0000
+  F1-Score: 0.7218
+  AUROC: 0.9802
+✅ Logits saved to ../results/bert_chinese_finance_logits_ood.pt
