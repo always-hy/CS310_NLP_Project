@@ -34,6 +34,9 @@ To install the required libraries, run:
 pip install -r requirements.txt
 ```
 
+## Repository Structure
+- Coming soon.
+
 ## Team Members
 
 | Name                | Student ID | Email                        |
